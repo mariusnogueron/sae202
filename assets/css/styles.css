@@ -1,0 +1,295 @@
+/* Styles du site MMIple */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, div, section, article {
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1% 0;
+    height: 32px;
+    background-color: black;
+    color: white;
+}
+
+header nav {
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    text-shadow: 1px 1px orange;
+}
+
+a:active {
+    color: white;
+    text-shadow: 1px 1px yellow;
+}
+
+a:visited {
+    color: white;
+}
+
+
+#connexion-link{
+    position: fixed;
+    right: 10px;
+}
+#connexion{
+    background-color: green;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+#deconnexion{
+    background-color: red;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+#contenu {
+    flex-direction: column;
+    height: 20vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 98%;
+}
+#contenu a{
+    color: black;
+}
+
+#logo {
+    position: fixed;
+    max-width: 45px;
+}
+
+.remarque {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.centre {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.game-display{
+    width: 90%;
+    border: dashed 2px grey;
+    border-radius: 10px;
+    margin: 0 auto 15px auto;
+    padding-inline: 15px;
+}
+
+.game-name{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px auto 5px auto;
+    border-radius: 15px;
+    padding-inline: 10px;
+    height: 50px;
+    align-items: center;
+    color: white;
+    background-color: gray;
+    font-weight: bold;
+}
+.add-pannier{
+    display: flex;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 20px auto 5px auto;
+    border-radius: 15px;
+    padding-inline: 10px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    background-color: white;
+    border: solid 1px red;
+    font-weight: bold;
+    transition: all .3s;
+}
+.add-button a{
+    text-decoration: none;
+}
+.add-pannier:hover{
+    color: white;
+    background-color: red;
+    border: solid 1px white;
+    transition: all .3s;
+    
+}
+
+.game-photo{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0px;
+}
+
+img.game1-img{
+    width: 400px;
+    height: 250px;
+}
+img.game2-img{
+    width: 150px;
+    height: 250px;
+}
+img.game3-img{
+    width: 300px;
+    height: 250px;
+}
+
+
+
+
+/* ---------------------------------------- Form de connexion ---------------------------------------- */
+
+
+.form {
+    background-color: #fff;
+    display: block;
+    padding: 1rem;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 39px 12px rgba(0, 0, 0, 0.30);
+  }
+  
+  .form-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .input-container input, .form button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+  }
+  
+  .input-container input {
+    background-color: #fff;
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .input-container span {
+    display: grid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    place-content: center;
+  }
+  
+  .input-container span svg {
+    color: #9CA3AF;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .submit {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #4F46E5;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .signup-link {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+  
+  .signup-link a {
+    text-decoration: underline;
+    color: #000;
+  }
+  #connexion-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+/* ---------------------------------------- Form de connexion ---------------------------------------- */
+
+
+
+/* ---------------------------------------- Page profil ---------------------------------------- */
+
+#profil-pic-container{
+    display: flex;
+    justify-content: center;
+}
+img#profile_picture{
+    max-width: 40px;
+    border-radius: 70%;
+}
+#profil-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+img#profile-page-pic{
+    max-width: 150px;
+    border-radius: 70%;
+}
+#profil-card form{
+    box-shadow: 0px 0px 39px 12px rgba(0, 0, 0, 0.30);
+    padding: 25px;
+    border-radius: 25px;
+    display: grid;
+}
+.profil-input-centered{
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------------------------------------- Page profil ---------------------------------------- */
