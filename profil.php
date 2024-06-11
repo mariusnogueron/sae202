@@ -7,12 +7,17 @@
 <body>
     <?php
     require('conf/conf.inc.php');
-     require('autres_page/menu.php');
-    $client_username= $_SESSION['client_username'];
-    $db= new PDO('mysql:host='.HOST.';dbname='.DBNAME,USER,PASSWORD);
-    $req = $db->query("SELECT * FROM Users WHERE user_username= '$client_username' ");
+    require('autres_page/menu.php');
+   $client_username= $_SESSION['client_username'];
+   $db= new PDO('mysql:host='.HOST.';dbname='.DBNAME,USER,PASSWORD);
+   $req = $db->query("SELECT * FROM Users WHERE user_username= '$client_username' ");
+   $resultat = $req->fetch();
 
-    $resultat = $req->fetch();
+   $user_id = $resultat['user_id'];
+   $req2 = $db->query("SELECT COUNT(jardin_id) AS nb_jardins FROM Jardins WHERE _user_id = '$user_id'");
+   $resultatJardin = $req2->fetch();
+   // var_dump($resultatJardin);
+   $nombreJardin = $resultatJardin['nb_jardins'];
         ?>
         <div id="profil-card">
             <form method="POST" action="profil_update.php">
@@ -40,6 +45,7 @@
                     <input type="text" name="user_genre" value="<?php echo $resultat['user_genre']; ?>"><br>
                     <input type="text" name="user_age" value="<?php echo $resultat['user_age']; ?>"><br>
                 </div>
+                <h3>Nombre de jardin(s) : <?php echo $nombreJardin ?></h3>
                 <input type="submit" value="Enregistrer les modifications">
             </form>
         </div>

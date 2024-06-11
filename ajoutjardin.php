@@ -22,13 +22,13 @@
         }
     </style>
     <div id="form-container">
-        <form action="/jardin/validation_inscription" method="post" enctype="multipart/form-data">
+        <form action="valid_ajoutjardin.php" method="post" enctype="multipart/form-data">
             <input type="text" name="jardin_nom" placeholder="Nom du Jardin">
             <input type="text" name="jardin_adr" placeholder="Adresse du Jardin">
             <input type="text" name="jardin_surf" placeholder="Surface du Jardin">  
             <label for="image">Photo du jardin</label>
             <input type="file" name="image" id="image"/>
-            <input type="submit" value="inscription">
+            <input type="submit" value="Ajouter">
         </form>
     </div>
 </body>

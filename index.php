@@ -9,28 +9,11 @@
 <body class="bg-light_green">
 
 <!-- <div class="fixed w-full top-0"> -->
-<div class="flex bg-dark_green text-center justify-center gap-5 py-10 ">
-    <img src="assets/img/fleur.svg" class="w-28" alt="">
-<h1 class="text-olive uppercase flex items-center text-9xl font-nerko">potage</h1>
-    <div class="flex"> 
-        <button class="text-dark_green absolute right-0  uppercase bg-white font-nerko px-3 py-1 rounded-l-lg text-4xl">se connecter</button>
-
-    </div>
-    
-</div>
-
-<div class="flex bg-guacamole justify-around rounded-b-3xl ">
-    <div class="list-none font-nerko text-white uppercase text-4xl w-full flex py-5 justify-around">
-    <a href="" class="text-dark_green">accueil</a>
-    <a href="jardin.php">jardin potager</a>
-    <a href="">contacts</a>
-    <a href="">profil</a>
-    </div>
-</div>
-</div>
-
-
-
+    <?php
+        require('conf/conf.inc.php');
+        require('autres_page/menu.php')
+        
+    ?>
 <div class="h-svh">
 
 <div class="">
@@ -48,7 +31,7 @@ Une application qui propose un service de co-jardinage dédié aux amateurs et a
 
 Notre application est conçue pour être intuitive et facile à utiliser. Que vous soyez propriétaire d’un jardin ou jardinier à la recherche d’un espace, Potage vous guide !
 Vous pouvez voir les jardins disponibles autour de vous, choisir celui qui vous convient et entrer en contact avec le propriétaire pour demander le co-jardinage
-L’expérience utilisateur est au cœur de notre développement. Que vous accédiez à notre site depuis un ordinateur chez c-vous ou un téléphone, vous pourrez naviguer simplement sur l’application. 
+L'expérience utilisateur est au cœur de notre développement. Que vous accédiez à notre site depuis un ordinateur chez c-vous ou un téléphone, vous pourrez naviguer simplement sur l’application. 
         </p>
 </div>
 
